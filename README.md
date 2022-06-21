@@ -1,4 +1,4 @@
-# Trailblazer Kernel for:
+# 🚂🔥 Trailblazer Kernel 🚂🔥 for:
 ### Note 10 Devices
 
 Kernel Project by me personally forked from ThunderStorms Team
