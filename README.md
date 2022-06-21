@@ -1,7 +1,7 @@
-# ThunderStormS Kernel for Samsung Galaxy :
-# S10 & Note10 devices
+# Trailblazer Kernel for:
+# Note 10 Devices
 
-Kernel Project by Team ThunderStorms
+Kernel Project by me personally forked from ThunderStorms Team
 
 ThunderStorms kernel is based on Cruel Kernel - big thanks and credits to
 Cruel Kernel Team.
@@ -86,11 +86,8 @@ kernel automatically.
 Next:
 ```sh
 # Install prerequisites
-# If you use ubuntu or ubuntu based distro then you need to install these tools:
-$ sudo apt-get install build-essential libncurses-dev libtinfo5 bc bison flex libssl-dev libelf-dev
-# If you use Fedora:
-$ sudo dnf group install "Development Tools"
-$ sudo dnf install ncurses-devel ncurses-compat-libs bc bison flex elfutils-libelf-devel openssl-devel
+# If you use ubuntu or ubuntu based distro then you need to install these tools: (rip debian)
+$ sudo apt-get install build-essential libncurses-dev libtinfo5 bc bison flex libssl-dev libelf-dev dialog
 
 # Install mkbootimg
 $ wget -q https://android.googlesource.com/platform/system/tools/mkbootimg/+archive/refs/heads/master.tar.gz -O - | tar xzf - mkbootimg.py
@@ -106,6 +103,9 @@ $ git branch -a | grep remotes | grep ts | cut -d '/' -f 3
 $ git checkout master
 # Install compilers
 $ git submodule update --init --recursive
+#configure
+$ make menuconfig
+
 # Compile
 $ ./build mkimg name="ThunderStorms" model=N970F
 # You will find your kernel in boot.img file after compilation inside the prime folder.
@@ -115,8 +115,6 @@ $ ls -lah ./boot.img
 # if you connect your phone to the PC and execute:
 $ ./build :flash
 
-# Or in a single command (compilation with flashing)
-# ./build flash name="ThunderStorms" model=G973F
 ```
 ----------------------------------------------------------------------------------------
 # Available toolchains:
