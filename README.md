@@ -1,12 +1,12 @@
 # Trailblazer Kernel for:
-# Note 10 Devices
+### Note 10 Devices
 
 Kernel Project by me personally forked from ThunderStorms Team
 
 ThunderStorms kernel is based on Cruel Kernel - big thanks and credits to
 Cruel Kernel Team.
 
-> I'm aiming to have pocket computer that have as much as functionality as laptop so i don't have to bring my 16" creeky plastic laptop everywhere
+> I'm aiming to have pocket computer that have as much as functionality as laptop so i don't have to bring my 16" creeky plastic laptop everywhere by adding and configuring couple of features such as KVM, DRM/DRI(Direct Rendering Manager), and some supports (see make menuconfig for details)
 
 Based on samsung sources and android common tree.
 Supported devices:
