@@ -6,6 +6,8 @@ Kernel Project by me personally forked from ThunderStorms Team
 ThunderStorms kernel is based on Cruel Kernel - big thanks and credits to
 Cruel Kernel Team.
 
+> I'm aiming to have pocket computer that have as much as functionality as laptop so i don't have to bring my 16" creeky plastic laptop everywhere
+
 Based on samsung sources and android common tree.
 Supported devices:
 G970F, G970N, G973F, G975F, G975F G977B, G977N,
@@ -95,19 +97,15 @@ $ chmod +x mkbootimg.py
 $ sudo mv mkbootimg.py /usr/local/bin/mkbootimg
 
 # Get the sources
-$ git clone [https://github.com/ThunderStorms21th/Galaxy-S10](https://github.com/albertstarfield/N10-Kernel-KVM-source/)
+$ git clone https://github.com/albertstarfield/N10-Kernel-KVM-source/
 $ cd N10-Kernel-KVM-source
-# List available branches
-$ git branch -a | grep remotes | grep ts | cut -d '/' -f 3
-# Switch to the branch you need
-$ git checkout master
-# Install compilers
+# Pull all submodules for the compilers
 $ git submodule update --init --recursive
-#configure
+# configure
 $ make menuconfig
 
 # Compile
-$ ./build mkimg name="ThunderStorms" model=N970F
+$ ./build mkimg name="Trailblazer" model=N970F
 # You will find your kernel in boot.img file after compilation inside the prime folder.
 $ ls -lah ./boot.img
 
