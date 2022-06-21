@@ -22,6 +22,7 @@ OneUI + AOSP (for some AOSP Q | OneUI 4 (S) OS - kernel doesn't work)
 - thehacker911 - overall improvements and advices
 - @bamsbamx - ported boeffla_wakelock_blocker module
 - Nico (@NicoMax2012) - ported moro sound module
+- ThunderStorms Kernel Team
 
 ## How to install
 
