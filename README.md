@@ -97,8 +97,8 @@ $ chmod +x mkbootimg.py
 $ sudo mv mkbootimg.py /usr/local/bin/mkbootimg
 
 # Get the sources
-$ git clone https://github.com/ThunderStorms21th/Galaxy-S10
-$ cd Galaxy-S10
+$ git clone [https://github.com/ThunderStorms21th/Galaxy-S10](https://github.com/albertstarfield/N10-Kernel-KVM-source/)
+$ cd N10-Kernel-KVM-source
 # List available branches
 $ git branch -a | grep remotes | grep ts | cut -d '/' -f 3
 # Switch to the branch you need
@@ -106,7 +106,7 @@ $ git checkout master
 # Install compilers
 $ git submodule update --init --recursive
 # Compile
-$ ./build mkimg name="ThunderStorms" model=G973F
+$ ./build mkimg name="ThunderStorms" model=N970F
 # You will find your kernel in boot.img file after compilation inside the prime folder.
 $ ls -lah ./boot.img
 
